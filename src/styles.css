@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@1,7..72,300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,4 +11,8 @@ html, body {
 
 * {
     font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-family: 'Literata', serif;
+    transform: rotate3d(1, 1, 1, -15deg);
 }

@@ -1,8 +1,23 @@
+import React from 'react';
 import clsx from 'clsx';
 
-import { Button } from './Button.jsx';
+import { Button } from '@/components/UI/atoms/Button';
+import { Image } from '@/components/UI/atoms/Image';
 
-export const Cards = ({ cards }) => {
+type Card = {
+    title: string;
+    image: string;
+    description: string;
+    background: string;
+    onClick: () => void;
+    buttonText: string;
+};
+
+type CardsProps = {
+    cards: Card[];
+};
+
+export const Cards = ({ cards }: CardsProps) => {
     return (
         <div className={clsx('flex', 'justify-center', 'items-center')}>
             <div className={clsx('grid', 'grid-cols-2', 'gap-8', 'w-8/12')}>
@@ -19,7 +34,7 @@ export const Cards = ({ cards }) => {
                             key={title}
                             className={clsx('rounded-md', 'p-8', background)}
                         >
-                            <img src={image} alt="Icon" width="120" />
+                            <Image src={image} alt="Icon" width="120" />
                             <div className="my-8">
                                 <div
                                     className={clsx(
