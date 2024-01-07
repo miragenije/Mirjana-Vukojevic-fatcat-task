@@ -20,14 +20,20 @@ Pages
 
 ### Project structure
 
+
 |-- src/
-|   |-- api/
-|   |-- assets/
-|   |-- components/
-|   |-- config/
-|   |-- lib/
+
+ |-- api/
+
+ |-- assets/
+
+|-- components/
+
+|-- config/
+
+ |-- lib/
+
 |-- public/
-|-- ...
 
 ### Technologies Used
 
@@ -41,7 +47,6 @@ Pages
 ###Icons
 - [FontAwesome Icons](https://fontawesome.com/)
 
-###
 
 ###Install dependencies
 npm install
